@@ -93,10 +93,10 @@ public class Oven {
     private String getRecipeLabel(Recipe recipe, boolean unicode) {
         String name = recipe.getClass().getSimpleName().toLowerCase();
         String decoration = "";
-        if (recipe.getClass() == Baguette.class) {
+        /*if (recipe.getClass() == Baguette.class) {
             name = "baguette";
             decoration = (unicode ? " \uD83C\uDF5E" : "");
-        } else if (recipe.getClass() == PotRoast.class) {
+        } else */if (recipe.getClass() == PotRoast.class) {
             name = "pot roast";
             decoration = (unicode ? " \uD83C\uDF56" : "");
         } else if (recipe.getClass() == RoastedSweetPotato.class) {
